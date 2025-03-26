@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+cd ~/Android/Sdk/emulator
+./emulator -avd Nexus_One_API_28 -writable-system

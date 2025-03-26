@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+echo '---- Copy data.json ----'
+cp ../data/app/app-data.json src/data/data.json
+
+echo '---- Copy Android release key'
+cp keystore/guigui-android-release-key.keystore android/app/
+
+echo '---- Build Android Release ----'
+cd android
+./gradlew bundleRelease
